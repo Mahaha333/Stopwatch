@@ -91,4 +91,12 @@ button{
     color: white;
 }
 
-  
+
+.split-table {
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+button:disabled {
+    cursor: default;
+}

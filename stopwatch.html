@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <div class="output">
         <span id="hours" style="font-size:11vw; font-weight: bold;">00</span>:
         <span id="minutes" style="font-size:11vw; font-weight: bold;">00</span>:
@@ -22,11 +22,14 @@
       <div class="split-time-text">
         <h1 style="font-size:100; font-weight: bold; color: #ffa500">SPLIT TIME</h1>
       </div>
-      <div class="theButtons">
-        <button id="start" class="start-button">Start</button>
-        <button id="split" class="split-button">Split</button>
-        <button id="reset" class="reset-button">Reset</button>
+      <div class="buttonsContainer">
+        <div class="theButtons">
+          <button id="start" class="start-button">Start</button>
+          <button id="split" class="split-button">Split</button>
+          <button id="reset" class="reset-button">Reset</button>
+        </div>
       </div>
+      <hr class="horizontal-line">
     </div>
     <table id="splitTimesTable" class="split-table"></table>
     <script src="stopwatch.js"></script>

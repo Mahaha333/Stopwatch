@@ -1,102 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-*{
-    font-family: Roboto;
+* {
+  font-family: Roboto;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout */
+  align-items: center;
+  height: 100vh;
 }
 
-.container{
-    text-align: center;
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout */
+  align-items: center;
+  margin-top: 200px;
 }
 
-.output{
-    font-size: 2.5rem;
-    color: black;
-    margin-top: -100px;
+.output {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: -100px;
 }
 
-.output span{
-    width: 3rem;
+#milliseconds-1 {
+    font-size: 11w;
 }
 
-.split-time-text{
-    font-size: 16px;
-    margin-right: 500px;
+.output span {
+  width: 3rem;
 }
 
-.theButtons{
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
-    justify-content: space-between;
-    width: 345px;
-    height: 150px;
-    margin-top: 30px;
-    margin-left: -40px;
+.split-time-text {
+  font-size: 16px;
+  margin-right: 500px;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
-.theButtons a{
-    height: 75px;
+.theButtons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-between;
+  width: 345px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: -40px;
 }
 
-button{
-    border: 50% solid #18a69d;
-    border-radius: 50%;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #18a69d;
-    cursor: pointer;
-    height: 100px;
-    width: 100px;
+.theButtons a {
+  height: 75px;
+  margin-left: -100px;
 }
 
-.start-button{
-    border: #18a69d;
+button {
+  border: 50% solid #18a69d;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #18a69d;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin-top: -60px;
 }
 
-.split-button{
-    background-color: transparent;
-    color: #b7b7b8;
-    border: solid #b7b7b8;
+.start-button {
+  border: #18a69d;
+}
+
+.split-button {
+  background-color: transparent;
+  color: #b7b7b8;
+  border: solid #b7b7b8;
 }
 
 .reset-button {
-    background-color: transparent;
-    color: #b7b7b8;
-    border: solid #b7b7b8;
+  background-color: transparent;
+  color: #b7b7b8;
+  border: solid #b7b7b8;
 }
 
 .paused {
-    background-color: #fb657f;
-    color: white;
+  background-color: #fb657f;
+  color: white;
 }
 
-
 .split-button.active {
-    background-color: #ffa500;
-    color: white;
+  background-color: #ffa500;
+  color: white;
+  border: solid #ffa500;
 }
 
 .reset-button.blue {
-    background-color: #4487d0;
-    color: white;
+  background-color: #4487d0;
+  color: white;
+  border: solid #4487d0;
 }
 
-
 .split-table {
-    margin-top: 30px;
-    border-collapse: collapse;
+  margin-top: -10px;
+  border-collapse: collapse;
+}
+
+.split-table th,
+.split-table td {
+  padding: 8px 100px;
+}
+
+.entry-number-cell {
+  text-align: left;
+}
+
+.entry-time-cell {
+  text-align: center;
+}
+
+.entry-type-cell {
+  text-align: right;
 }
 
 button:disabled {
-    cursor: default;
+  cursor: default;
+}
+
+.horizontal-line {
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #b7b7b8; 
+  width: 99%;
+}
+
+.buttonsContainer {
+    margin-left: -400px;
 }
